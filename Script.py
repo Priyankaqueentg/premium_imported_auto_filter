@@ -19,7 +19,7 @@ class script(object):
     
     STATUS_TXT = """```   
 ‣ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
-‣ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ : <code>4{}</code>
+‣ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ : <code>{}</code>
 ‣ ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ : <code>{}</code>
 ‣ ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
 ‣ ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
