@@ -8,8 +8,8 @@ async def admin_cmd(client, message):
     # Define the buttons
     buttons = [
         [KeyboardButton("/add_premium"), KeyboardButton("/premium_users")],
-        [KeyboardButton("/remove_premium"), KeyboardButton("/broadcast")],
-        [KeyboardButton("/grp_broadcast"), KeyboardButton("/enable")],
+        [KeyboardButton("/add_redeem"), KeyboardButton("/broadcast")],
+        [KeyboardButton("/grp_broadcast"), KeyboardButton("/remove_premium")],
         [KeyboardButton("/disable"), KeyboardButton("/leave")],
         [KeyboardButton("/ban"), KeyboardButton("/unban")],
         [KeyboardButton("/deleteall"), KeyboardButton("/delete")],
