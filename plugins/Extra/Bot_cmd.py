@@ -13,6 +13,7 @@ async def set_commands(client, message):
         BotCommand("mostlist", "To Show Most Searches List"),
         BotCommand("trendlist", "𝖳𝗈 𝖦𝖾𝗍 𝖳𝗈𝗉 𝖳𝗋𝖾𝗇𝖽𝗂𝗇𝗀 𝖡𝗎𝗍𝗍𝗈𝗇 𝖫𝗂𝗌t"),
         BotCommand("myplan", "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴜɴᴛ ᴘʟᴀɴ"),
+        BotCommand("redeem", "𝑇𝑜 𝑅𝑒𝑑𝑒𝑒𝑚 𝑃𝑟𝑒𝑚𝑖𝑢𝑚 𝐶𝑜𝑑𝑒"),
         BotCommand("refer", "To Refer Your Friend And Get Premium"),
         BotCommand("play", "Get Free Premium..."),
         BotCommand("stats", "ᴄʜᴇᴄᴋ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ"),
