@@ -1,0 +1,56 @@
+ pyrofork
+ tgcrypto 
+ pymongo[srv]==3.12.3 
+ motor==2.5.1 
+ marshmallow==3.14.1 
+ umongo==3.0.1 
+ requests==2.31.0
+ bs4 
+ git+https://github.com/Joelkb/cinemagoer 
+ shortzy 
+ datetime 
+ pytz 
+ aiohttp
+#---jisshu mod----#
+ googletrans==4.0.0-rc1
+ aiogram==2.23.1
+ tmdbsimple 
+ 
+#---master---# 
+ #Telethroid==0.0.10 
+ PyLeaves==1.0.2 
+  beautifulsoup4==4.10.0
+
+#jisshu
+ instaloader==4.9.5
+ fuzzywuzzy
+ python-Levenshtein
+
+ #---others----# 
+ opencv-python-headless==4.7.0.68 
+ python-dotenv==0.21.1 
+ speedtest==0.0.1 
+ humanize==4.6.0 
+ Pillow==9.5.0 
+ psutil==5.9.4 
+ NumPy 
+ wheel 
+ ujson 
+ wget 
+ pytz
+ aiofiles
+ telegraph
+ dnspython==2.3.0
+ ### googletrans==4.0.0-rc1 ###
+python-decouple
+ffmpeg-python>=0.2.0
+
+jinja2
+apscheduler
+pyshorteners
+pyromod
+colorama
+
+
+
+  
