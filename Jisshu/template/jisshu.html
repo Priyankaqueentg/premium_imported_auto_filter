@@ -1,0 +1,201 @@
+<!DOCTYPE html == jisshu developer> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Jisshu Bots</title>
+    <link id="theme-link" rel="stylesheet" href="https://bootswatch.com/5/{{JS_THEMES}}/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jisshubot/data/fs/src/style2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="personal-message" id="personalMessage"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <a href="#" class="navbar-brand">Jisshu Bots</a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex">
+          
+                <div class="image-container"></div>
+                <div class="p-3">
+                    <h4 class="offcanvas-title font-semibold wow animate__animated animate__fadeInLeft" id="offcanvasWithBothOptionsLabel"<h4 class="offcanvas-title font-semibold wow animate__animated animate__fadeInLeft" id="offcanvasWithBothOptionsLabel" style="text-shadow: 3px 5px 11px black;">Zishan Khan</h4></h4>
+                    <p class="text-danger">The One & Only</p>
+                </div>
+            </div>
+            <div class="main-text">Telegram channels:</div>
+            <div class="d-grid gap-2">
+                <a href="https://t.me/JISSHU_BOTS" class="redeem-buttons">
+                    JISSHU BOTS
+                </a>
+                <a href="https://t.me/Jisshu_support" class="redeem-buttons">
+                    SUPPORT GROUP
+                </a>
+                <a href="https://t.me/Jisshu_Originals" class="redeem-buttons">
+                  BACKUP CHANNEL  
+                </a>
+                <a href="https://t.me/JisshuDeveloperBot" class="redeem-buttons">
+                  CONTACT
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="stats">🪙<span id="userPoints">0</span></div>
+    <div class="circle-container">
+        <div class="circle-image">
+            <button class="circle-button" id="clickButton"></button>
+        </div>
+    </div>
+    <button class="redeem-button" id="redeem200">300 coin 1 day premium</button>
+    <button class="redeem-button" id="redeem800">1400 coin 5day premium</button>
+    <button class="redeem-button" id="redeem1900">1900 coin 7day premium</button>
+
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            const results = regex.exec(location.search);
+            if (!results || results.length < 2) {
+                return ''; // Default value when parameter not found
+            }
+            return decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        const telegramUserId = getUrlParameter('userId');
+        const userName = getUrlParameter('userName'); // You can also add userName parameter if needed
+
+        if (!telegramUserId) {
+            const errorMessage = 'User ID not found. Please access this page through the Jisshu bots.';
+            alert(errorMessage);
+            throw new Error(errorMessage);
+        }
+
+        const pointsKey = `points_${telegramUserId}`;
+        let points = parseInt(localStorage.getItem(pointsKey), 10) || 0;
+        const button = document.getElementById('clickButton');
+        const scoreDisplay = document.getElementById('userPoints');
+        const personalMessage = document.getElementById('personalMessage');
+
+        const userNameColor = '#FFA500'; // Customize userName color
+
+        personalMessage.innerHTML = `Hey <span style="color: ${userNameColor};">@${userName}</span>`;
+
+        const updateDisplay = () => {
+            scoreDisplay.textContent = points;
+        };
+
+        updateDisplay();
+
+        const createParticle = (x, y) => {
+            // Remove any existing particle
+            const existingParticle = button.querySelector('.particle');
+            if (existingParticle) {
+                existingParticle.remove();
+            }
+
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = `${x}px`;
+            particle.style.top = `${y}px`;
+            particle.textContent = '+2';
+            button.appendChild(particle);
+            setTimeout(() => {
+                particle.remove();
+            }, 600);
+        };
+
+        const handleClick = (e) => {
+            points += 1;
+            localStorage.setItem(pointsKey, points);
+            updateDisplay();
+
+            const rect = button.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            createParticle(x, y);
+        };
+
+        button.addEventListener('click', handleClick);
+
+        button.addEventListener('touchstart', (e) => {
+            button.style.animation = 'vibrate 0.2s linear infinite';
+        });
+
+        button.addEventListener('touchend', (e) => {
+            button.style.animation = '';
+            handleClick(e);
+        });
+
+        const sendMessageToTelegram = (message) => {
+            const botToken = '{{JS_BOT_TOKEN}}';
+            const chatId = '{{JS_LOG_CHANNEL}}';  // Replace with your actual log channel ID
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message
+                })
+            });
+        };
+
+        const redeemButton200 = document.getElementById('redeem200');
+        redeemButton200.addEventListener('click', () => {
+            if (points >= 300) {
+                points -= 300;
+                localStorage.setItem(pointsKey, points);
+                updateDisplay();
+                const message = `#webpremium ${telegramUserId} 1day 300`;
+                sendMessageToTelegram(message);
+                alert('You have successfully received your premium.');
+            } else {
+                alert('Not enough points to redeem.');
+            }
+        });
+
+        const redeemButton800 = document.getElementById('redeem800');
+        redeemButton800.addEventListener('click', () => {
+            if (points >= 1400) {
+                points -= 1400;
+                localStorage.setItem(pointsKey, points);
+                updateDisplay();
+                const message = `#webpremium ${telegramUserId} 5day 1400`;
+                sendMessageToTelegram(message);
+                alert('You have successfully received your premium.');
+            } else {
+                alert('Not enough points to redeem.');
+            }
+        });
+
+        const redeemButton1900 = document.getElementById('redeem1900');
+        redeemButton1900.addEventListener('click', () => {
+            if (points >= 1900) {
+                points -= 1900;
+                localStorage.setItem(pointsKey, points);
+                updateDisplay();
+                const message = `#webpremium ${telegramUserId} 7day 1900`;
+                sendMessageToTelegram(message);
+                alert('You have successfully received your premium.');
+            } else {
+                alert('Not enough points to redeem.');
+            }
+        });
+    </script>
+   <div style="text-align: center; margin-top: 20px;">
+    <p style="font-size: 18px;">Mode With <span class="moving-heart">🩵</span> <a href="https://t.me/IM_JISSHU" style="color: #FFA500; text-decoration: none;">Zishan khan</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
