@@ -4,7 +4,6 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from database.users_chats_db import db  
 from info import PREMIUM_LOGS
-# @JISSHU_BOTS = @MR_JISSHU
 
 def get_seconds(time_str):
     time_units = {
