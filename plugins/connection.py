@@ -6,8 +6,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
 
 @Client.on_message((filters.private | filters.group) & filters.command('connect'))
 async def addconnection(client, message):
