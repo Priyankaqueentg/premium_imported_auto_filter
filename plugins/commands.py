@@ -21,8 +21,7 @@ import re, asyncio, os, sys
 import json
 import base64
 logger = logging.getLogger(__name__)
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
+
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
@@ -977,8 +976,7 @@ async def settings(client, message):
                 reply_to_message_id=message.id
             )
 
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
+
 
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
@@ -1377,8 +1375,7 @@ async def stop_button(bot, message):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 REREREMGS = [ "🎉", "🔥", "⚡"]
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
+
 @Client.on_message(filters.command("refer"))
 async def refer(bot, message):
     await message.react(emoji=random.choice(REREREMGS), big=True)
@@ -1396,6 +1393,3 @@ async def refer(bot, message):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
     )
-
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
