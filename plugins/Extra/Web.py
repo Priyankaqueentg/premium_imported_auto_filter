@@ -11,7 +11,7 @@ logger = logging.getLogger()
 @Client.on_message(filters.command('play'))
 async def start(client, message):
     user_id = message.from_user.id
-    username = message.from_user.username or 'JISSHU_BOTS'
+    username = message.from_user.username or 'Evil000000'
     
     ads_id = 'ads'  
     
@@ -28,7 +28,7 @@ async def start(client, message):
     )
     await message.reply_sticker("CAACAgQAAxkBAAEBweZmi6IOPFaxaaGgMhIsi6DCrZhb5wAC6hMAAnaYYVD9OAxZrFc6EB4E")
     await message.reply_text(
-        'College Coin & Get Free Premium...\n\n300 coin =  1 day Premium\n1400 coin =  5 day Premium\n1900 coin =  7 day Premium',
+        'College Coin & Get Free Premium...\n\n500 coin =  1 day Premium\n1500 coin =  5 day Premium\n2000 coin =  7 day Premium',
         reply_markup=reply_markup
     )
 
