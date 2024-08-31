@@ -27,9 +27,7 @@ async def root_route_handler(request):
     
     return web.Response(text=html_content, content_type='text/html') 
 
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
-#jisshu
+
 @routes.get("/jisshu/")
 async def js_handler(request):
     user_id = request.query.get('userId')
@@ -59,9 +57,7 @@ async def js_handler(request):
     except PermissionError:
         return web.Response(text="Permission denied", status=403)
 
-#jisshu
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
+
 
 @routes.get(r"/watch/{path:\S+}", allow_head=True)
 async def stream_handler(request: web.Request):
@@ -191,6 +187,3 @@ async def media_streamer(request: web.Request, id: int, secure_hash: str):
             "Accept-Ranges": "bytes",
         },
     )
-
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
