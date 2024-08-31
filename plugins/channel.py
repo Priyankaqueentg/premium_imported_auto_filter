@@ -1,5 +1,3 @@
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
 
 from pyrogram import Client, filters
 from info import CHANNELS
