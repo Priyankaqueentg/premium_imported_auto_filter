@@ -28,7 +28,7 @@ async def start(client, message):
     )
     await message.reply_sticker("CAACAgQAAxkBAAEBweZmi6IOPFaxaaGgMhIsi6DCrZhb5wAC6hMAAnaYYVD9OAxZrFc6EB4E")
     await message.reply_text(
-        'College Coin & Get Free Premium...\n\n500 coin =  1 day Premium\n1500 coin =  5 day Premium\n2000 coin =  7 day Premium',
+        'Collect Coin & Get Free Premium...\n\n500 coin =  1 day Premium\n1500 coin =  5 day Premium\n2000 coin =  7 day Premium',
         reply_markup=reply_markup
     )
 
