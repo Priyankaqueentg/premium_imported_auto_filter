@@ -1446,7 +1446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)   
 
     elif query.data.startswith("stream"):
-        user_id = query.from_user.id
+       user_id = query.from_user.id
        file_id = query.data.split('#', 1)[1]
        log_msg = await client.send_cached_media(
        chat_id=LOG_CHANNEL,
