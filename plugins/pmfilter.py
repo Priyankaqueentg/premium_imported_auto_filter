@@ -1483,7 +1483,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                ], [
                InlineKeyboardButton('❌ ᴄʟᴏsᴇ ❌', callback_data='close_data')
               ]]
-         else:
+       else:
         # Buttons or message for non-premium users if premium is enabled
            btn = [[
                InlineKeyboardButton("⭐️ Get Premium ", callback_data="seeplans")
