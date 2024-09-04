@@ -168,7 +168,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌘"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 🌑"
-        m=await message.reply_sticker("") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAIEl2bYRr0mQYcJJcGZAzf1rMI6lj9KAAJ1GgACyHzBVlSXY5E5lbHQHgQ") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
