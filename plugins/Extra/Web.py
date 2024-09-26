@@ -11,7 +11,7 @@ logger = logging.getLogger()
 @Client.on_message(filters.command('play'))
 async def start(client, message):
     user_id = message.from_user.id
-    username = message.from_user.username or 'Evil000000'
+    username = message.from_user.username or 'Kalmoviesking'
     
     ads_id = 'ads'  
     
