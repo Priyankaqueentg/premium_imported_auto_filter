@@ -15,7 +15,7 @@ async def admin_cmd(client, message):
         [KeyboardButton("/deleteall"), KeyboardButton("/delete")],
         [KeyboardButton("/Commands"), KeyboardButton("/restart")],
         [KeyboardButton("All These Commands Can Be Used Only By Admins.")],
-        [KeyboardButton("⚡ powered by @Evil00000")]
+        [KeyboardButton("⚡ powered by @Kalmoviesking")]
     ]
     reply_markup = ReplyKeyboardMarkup(buttons, resize_keyboard=True, one_time_keyboard=True)
     
