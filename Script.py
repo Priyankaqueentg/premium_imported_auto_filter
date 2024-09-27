@@ -242,7 +242,7 @@ developer : Tctowner
 </b>""" 
 
     
-    CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/Tctownerchannel5">MOvies Channel</a>」</b>"""
+    CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/dbmovieschannel">Movies Channel</a>」</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
@@ -328,7 +328,7 @@ For Indian Users
  ❏ 400₹   ➠    𝟶𝟼 Month
  ❏ 900₹   ➠    𝟷𝟸 Month
 
-🆔 ᴜᴘɪ ɪᴅ ➩ <code>nitishsehrawat0807@oksbi</code> [ᴛᴀᴘ ᴛᴏ ᴄᴏᴘʏ]
+🆔 ᴜᴘɪ ɪᴅ ➩ <code>@tctowner</code> [ᴛᴀᴘ ᴛᴏ ᴄᴏᴘʏ]
 
 ⛽️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ: /myplan
 
