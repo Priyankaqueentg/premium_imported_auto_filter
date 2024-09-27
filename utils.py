@@ -708,8 +708,6 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
                                 InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/Tctowner")
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/Tctowner")
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/Tctowner")
                                 ]
                             ]
                         )
