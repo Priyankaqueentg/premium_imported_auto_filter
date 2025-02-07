@@ -545,16 +545,17 @@ async def start(client, message):
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                        [
+                reply_markup=InlineKeyboardMarkup(
+                            [
                             [
                                 InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'stream#{file_id}'),
                             ],
-                            [
+                            [
                                 InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/dbmovieschannel'),
-                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/dbmovieschannel')  
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/dbmovieschannel') 
                             ],
                             [
-                                InlineKeyboardButton('📌 Instagram  📌', url=f'https://t.me/dbmovieschannel') 
+                                InlineKeyboardButton('📌 Instagram 📌', url=f'https://t.me/dbmovieschannel') 
                             ],
                             [
                                 InlineKeyboardButton('📌 Youtube 📌', url=f'https://t.me/dbmovieschannel') 
