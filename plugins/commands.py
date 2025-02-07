@@ -329,10 +329,20 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
+                   reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'stream#{file_id}'),
+                            ],
+            [
+                                InlineKeyboardButton('📌 18+ 📌', url=f'https://t.me/dbmovieschannel'),
+                     InlineKeyboardButton('📌 Back_up 📌', url=f'https://t.me/dbmovieschannel')  
+                            ],
+                            [
+                                InlineKeyboardButton('📌 Instagram  📌', url=f'https://t.me/dbmovieschannel') 
+                            ],
+                            [
+                                InlineKeyboardButton('📌 Youtube 📌', url=f'https://t.me/dbmovieschannel') 
                             ],
                             [
                                 InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/dbmovieschannel') 
