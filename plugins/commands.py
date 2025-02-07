@@ -364,7 +364,7 @@ async def start(client, message):
                             ],
             [
                                 InlineKeyboardButton('📌 18+ 📌', url=f'https://t.me/dbmovieschannel'),
-                     InlineKeyboardButton('📌 Back_up 📌', url=f'https://t.me/dbmovieschannel')  
+                                InlineKeyboardButton('📌 Back_up 📌', url=f'https://t.me/dbmovieschannel')  
                             ],
                             [
                                 InlineKeyboardButton('📌 Instagram  📌', url=f'https://t.me/dbmovieschannel') 
@@ -545,7 +545,7 @@ async def start(client, message):
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-             reply_markup=InlineKeyboardMarkup(
+        reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'stream#{file_id}'),
