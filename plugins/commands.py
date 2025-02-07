@@ -552,7 +552,7 @@ async def start(client, message):
                             ],
                             [
                                 InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/dbmovieschannel'),
-                     InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/dbmovieschannel')  
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/dbmovieschannel')  
                             ],
                             [
                                 InlineKeyboardButton('📌 Instagram  📌', url=f'https://t.me/dbmovieschannel') 
